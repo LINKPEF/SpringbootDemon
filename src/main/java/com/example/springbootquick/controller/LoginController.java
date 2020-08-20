@@ -14,7 +14,7 @@ public class LoginController {
                         @RequestParam("password") String password,
                         Map<String,Object> map){
         if(!StringUtils.isEmpty(username) && "123456".equals(password)){
-            return "dashboard";
+            return "redirect:/main.html";
         }else{
             map.put("msg","用户名密码错误");
             return "index";
