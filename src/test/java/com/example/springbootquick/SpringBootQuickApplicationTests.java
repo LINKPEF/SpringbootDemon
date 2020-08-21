@@ -8,6 +8,7 @@ class SpringBootQuickApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
 }
