@@ -14,10 +14,11 @@ public class LoginController {
                         @RequestParam("password") String password,
                         Map<String,Object> map){
         if(!StringUtils.isEmpty(username) && "123456".equals(password)){
+            //重定向设置 防止刷新页面导致表单重新提交
             return "redirect:/main.html";
         }else{
             map.put("msg","用户名密码错误");
-            return "index";
+            return "login";
         }
     }
 }
